@@ -1,0 +1,9 @@
+<div {{ bem( "f-25 role" ) }}>
+  {% include '@atoms/text/headings/_heading.twig' with {
+    heading_level: 6,
+    heading: roleheading
+  } %}
+  {% block role_content %}
+    {{ role_content }}
+  {% endblock %}
+</div>

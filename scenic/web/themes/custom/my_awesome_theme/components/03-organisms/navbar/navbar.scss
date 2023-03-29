@@ -1,0 +1,39 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import '../../00-base/00-defaults/01-variables';
+.navbar {
+  align-items: center;
+  &__logo {
+    position: absolute;
+    z-index: 555;
+    h2 {
+      font-size: 1.5rem;
+      letter-spacing: 0.2rem;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 400;
+    }
+  }
+  &__menu {
+    margin: 0 auto;
+    li {
+      padding: 20px 20px;
+      text-decoration: none !important;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+.main-menu {
+  li:nth-child(4) {
+    a {
+      opacity: 1;
+    }
+  }
+}
+.main-menu {
+  li:nth-child(3) {
+    a {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+imgtexthead: 'Creative Website Design'
+image_items:
+  - imgsection_img: './sq_img_6.jpeg'
+  - imgsection_img: './sq_img_2.jpeg'
+  - imgsection_img: './sq_img_5.jpeg'
+imgtextpara: 'Nostrum iure atque enim quisquam minima distinctio omnis consequatur aliquam suscipit quidem esse aspernatur Libero excepturi animi repellendus porro impedit'
+cardpara: 'Ipsum harum assumenda in eum vel eveniet numquam, cumque vero vitae enim cupiditate deserunt eligendi officia modi consectetur. Expedita tempora quos nobis earum hic ex asperiores quisquam optio nostrum sit'
+imgqoutes: './quote.png'
+designerimg: './person_2.jpeg'
+designername: 'Chris Peter'
+namepara: 'Web Designer'

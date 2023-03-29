@@ -1,0 +1,50 @@
+<div {{ bem('imgsection') }}>
+  <div {{ bem('container') }}>
+    <div {{ bem('d-flex') }}>
+      <div {{ bem('f-50 imgsection__image p-lr') }}>
+        {% for item in image_items %}
+          {% include '@atoms/images/image/_image.twig' with {
+            image_src: item.imgsection_img
+          } %}
+        {% endfor %}
+      </div>
+      <div {{ bem('f-50 imgsection__text p-lr') }}>
+       <div {{ bem('w-80') }}>
+        {% include '@atoms/text/headings/_heading.twig' with {
+          heading_level: 3,
+          heading: imgtexthead
+        } %}
+        {% include '@atoms/text/text/01-paragraph.twig' with {
+          paragraph_content: imgtextpara
+        } %}
+        <div {{ bem('imgsection__text--card') }}>
+        {% include '@atoms/text/text/01-paragraph.twig' with {
+          paragraph_content: cardpara
+        } %}
+        <div {{ bem('qoutes') }}>
+        {% include '@atoms/images/image/_image.twig' with {
+            image_src: imgqoutes
+          } %}
+        </div>
+         <div {{ bem('designer') }}>
+         <div {{ bem('designer-image') }}>
+          {% include '@atoms/images/image/_image.twig' with {
+            image_src: designerimg
+          } %}
+         </div>
+         <div {{ bem('designer-name') }}>
+          {% include '@atoms/text/headings/_heading.twig' with {
+          heading_level: 6,
+          heading: designername
+        } %}
+        {% include '@atoms/text/text/01-paragraph.twig' with {
+          paragraph_content: namepara
+        } %}
+         </div>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

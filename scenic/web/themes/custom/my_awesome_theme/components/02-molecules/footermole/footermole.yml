@@ -1,0 +1,10 @@
+footerheading: 'Scenic Product'
+footer_items:
+- footeritemurl : '#'
+  footeritemlink: 'link'
+- footeritemurl : '#'
+  footeritemlink: 'hello'
+- footeritemurl : '#'
+  footeritemlink: 'hi'
+- footeritemurl : '#'
+  footeritemlink: 'hello'      

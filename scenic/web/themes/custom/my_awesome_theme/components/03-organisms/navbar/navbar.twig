@@ -1,0 +1,18 @@
+{% set navbar_base_class = 'navbar' %}
+<div {{ bem('container-full') }}>
+<div {{ bem(navbar_base_class,'','',['d-flex']) }}>
+  <div {{ bem('logo', [], navbar_base_class,['f-50']) }}>
+    {% include '@atoms/text/headings/_heading.twig' with {
+      heading_level: 2,
+      heading: logo_heading
+    } %}
+  </div>
+
+  <div {{ bem('menu', [], navbar_base_class) }}>
+    {% include '@molecules/menus/main-menu/main-menu.twig' with {
+      menu_class: "main-menu",
+      items: menu_items,
+    } %}
+  </div>
+</div>
+</div>

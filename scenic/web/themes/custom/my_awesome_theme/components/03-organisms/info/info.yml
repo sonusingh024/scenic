@@ -1,0 +1,10 @@
+infopara: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, voluptatem? Consequatur soluta earum maxime voluptas labore nemo architecto doloribus dolor tenetur explicabo, quam unde eligendi, dignissimos placeat veniam, reiciendis debitis?'
+info_items:
+  - infoheading: 'Client'
+    role_content: 'Google, Inc.'
+  - infoheading: 'Role'
+    role_content: 'Design, Front-End and Back-End (WordPress)'
+  - infoheading: 'Year Started'
+    role_content: '2019'
+  - infoheading: 'Website URL'
+    role_content: 'VISIT WEBSITE'

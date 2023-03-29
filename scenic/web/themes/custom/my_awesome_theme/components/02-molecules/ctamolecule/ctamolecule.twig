@@ -1,0 +1,15 @@
+<div {{ bem('ctasection') }}>
+  <div {{ bem('container') }}>
+  {% include '@atoms/links/link/link.twig' with {
+  } %}
+    <div {{ bem('d-flex') }}>
+     {% for item in link_items %}
+      <div {{ bem('f-33 p-lr') }}>
+        {% include '@atoms/links/link/link.twig' with {
+          link_content: item.linkurl
+        } %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

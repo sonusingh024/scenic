@@ -1,0 +1,19 @@
+<div {{ bem('info') }}>
+  <div {{ bem('container') }}>
+    <div {{ bem('f-50 infotext') }}>
+      {% include '@atoms/text/text/01-paragraph.twig' with {
+        paragraph_content: infopara
+      } %}
+    </div>
+    <div {{ bem('infostats') }}>
+      <div {{ bem('d-flex') }}>
+        {% for item in info_items %}
+          {% include '@molecules/role/role.twig' with {
+            roleheading: item.infoheading,
+            role_content: item.role_content
+          } %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

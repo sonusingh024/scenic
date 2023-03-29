@@ -1,0 +1,7 @@
+imgsectiontwo_img: './sq_img_1.jpeg'
+imgtexttwohead: 'Creative Website Design'
+imgtexttwopara: 'Nostrum iure atque enim quisquam minima distinctio omnis consequatur aliquam suscipit quidem esse aspernatur! Libero excepturi animi repellendus porro impedit nihil in doloremque a quaerat enim voluptatum perspiciatis quas dignissimos maxime ut cum reiciendis eius dolorum voluptatem aliquam!'
+ul_items:
+  - content: 'Nostrum iure atque enim quisquam'
+  - content: 'Consequatur aliquam suscipit'
+  - content: "dignissimos maxime utcum"

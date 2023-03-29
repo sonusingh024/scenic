@@ -1,0 +1,23 @@
+<div {{ bem('imgsection') }}>
+  <div {{ bem('container') }}>
+    <div {{ bem('d-flex') }}>
+      <div {{ bem('f-50 imgsection__text p-lr') }}>
+        <div {{ bem('f-80 mr') }}>
+          {% include '@atoms/text/headings/_heading.twig' with {
+            heading_level: 3,
+            heading: imgtexttwohead
+          } %}
+          {% include '@atoms/text/text/01-paragraph.twig' with {
+            paragraph_content: imgtexttwopara
+          } %}
+          {% include '@atoms/lists/ul.twig' with {} %}
+        </div>
+      </div>
+      <div {{ bem('f-50 imgsection__image p-lr') }}>
+        {% include '@atoms/images/image/_image.twig' with {
+          image_src: imgsectiontwo_img
+        } %}
+      </div>
+    </div>
+  </div>
+</div>

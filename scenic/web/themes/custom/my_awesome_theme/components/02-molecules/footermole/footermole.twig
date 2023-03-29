@@ -1,0 +1,12 @@
+<div {{ bem('f-25 customfooter__item') }}>
+  {% include '@atoms/text/headings/_heading.twig' with {
+    heading_level: 6,
+    heading: footerheading
+  } %}
+  {% for item in footer_items %}
+  {% include '@atoms/links/link/link.twig' with {
+    link_url: footeritemurl,
+    link_content: item.footeritemlink
+  } %}
+  {% endfor%}
+</div>

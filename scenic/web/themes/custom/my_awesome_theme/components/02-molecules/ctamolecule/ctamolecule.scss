@@ -1,0 +1,32 @@
+@import '../../00-base/00-defaults/01-variables';
+.f-33 {
+  a {
+    border: 1px solid #dee2e6;
+    text-decoration: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: block;
+    text-align: center;
+    color: $bluecolor;
+    border-radius: 7px;
+  }
+}
+// .ctasection{
+//   position: relative;
+//   z-index: 60;
+//   &::after {
+//     content: '';
+//     background: $backcolor;
+//     height: 200px;
+//     -webkit-transform: skewY(-5deg);
+//     -ms-transform: skewY(-5deg);
+//     transform: skewY(-5deg);
+//     position: absolute;
+//     left: 0;
+//     top: -4px;
+//     right: 0;
+//     z-index: 1;
+//   }
+.ctasection{
+  margin-bottom: 4rem;
+}

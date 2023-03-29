@@ -1,0 +1,122 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: clr(background);
+  color: clr(text);
+
+  @include body-copy;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.main {
+  @include wrapper;
+
+  display: block; /* Fix for IE weirdness */
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+}
+
+// -----------------custom-css
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.f-25 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  @media (max-width: $medium) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+.f-33 {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+  @media (max-width: $medium) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.f-50 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  @media (max-width: $large) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.f-100 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.t-center {
+  text-align: center;
+}
+.container-full {
+  width: 100%;
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+.sb-show-main.sb-main-padded {
+  padding: 0 !important;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+.p-lr {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.w-80 {
+  width: 80%;
+}
+.f-80 {
+  margin-right: auto;
+  width: 80%;
+  @media (max-width: $large) {
+    margin-right: unset;
+    width: 100%;
+  }
+}

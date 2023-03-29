@@ -1,0 +1,61 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+.bannertext {
+  background: linear-gradient(to bottom, #7d8384f0, #7d8384f0),
+    url('/images/sq_img_2.jpeg') no-repeat center;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  min-height: 900px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -75px;
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  span {
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  a.link {
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: none;
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #007bff;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    box-shadow: 0 10px 10px 0px rgb(0 0 0 / 30%);
+  }
+  &::after {
+    content: '';
+    background: #fff;
+    height: 200px;
+    -webkit-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    right: 0;
+    z-index: 1;
+  }
+}

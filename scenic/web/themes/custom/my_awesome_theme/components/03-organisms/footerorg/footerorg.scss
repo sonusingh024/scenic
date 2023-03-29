@@ -1,0 +1,55 @@
+@import '../../00-base/00-defaults/01-variables';
+.customfooter {
+  background-color: $backcolor;
+  position: relative;
+  padding-bottom: 7rem;
+  padding-top: 7rem;
+  margin-top: 8rem;
+  z-index: 79;
+  &__item {
+    position: relative;
+    z-index: 79;
+    margin-bottom: 3rem;
+    h6 {
+      color: white;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+    }
+    a {
+      color: $bluecolor;
+      text-decoration: none;
+      margin-bottom: 0.5rem;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+  }
+  span i{
+    font-size: 2rem;
+    position: absolute;
+    z-index: 450;
+    top: -89px;
+    left: 50%;
+    box-shadow: 0 10px 10px 0px rgb(0 0 0 / 30%);
+  }
+}
+
+.customfooter::after {
+  content: '';
+  background: $backcolor;
+  height: 200px;
+  -webkit-transform: skewY(-5deg);
+  -ms-transform: skewY(-5deg);
+  transform: skewY(-5deg);
+  position: absolute;
+  left: 0;
+  top: -64px;
+  right: 0;
+  z-index: 1;
+}
